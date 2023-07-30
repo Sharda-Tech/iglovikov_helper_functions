@@ -38,6 +38,9 @@ def main():
 
         if not (args.image_folder / file_name).exists():
             continue
+        
+        if os.path.exists(str(output_image_folder / file_name)) and os.path.exists(str(output_label_folder / f"{Path(file_name).stem}.png")):
+            continue
 
         height = dft.iloc[0]["Height"]
         width = dft.iloc[0]["Width"]
