@@ -4,6 +4,7 @@ Process iMaterialist Fashion 2019 https://www.kaggle.com/c/imaterialist-fashion-
 
 import argparse
 import shutil
+import os
 from pathlib import Path
 
 import cv2
